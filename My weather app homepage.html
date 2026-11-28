@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        ,<title>My weather homepage</title>
+        <style>
+            .body{
+                background-color: #87ceeb;
+                background-image: radial-gradient(circle, white 2px, transparent 3px);
+                background-size: 40px, 40px;
+                background-repeat: repeat;
+                background-position: top center;
+                background-attachment: fixed;
+            }
+            .weather-card{
+                width: 400px;
+               border: 3px solid white;
+                border-radius: 20px;
+                background-image: linear-gradient(to bottom right, #1e90ff, #87cefa);
+            }
+            .weahter-icon{
+                font-size: 70px;
+                animation: floatCloud 3s infinte alternate;
+            }
+            @keyframes floatClaoud{
+                from{
+                    transform: translateY(0);
+                }
+                to{
+                    transform: translateY(20px);
+                }
+            }
+            .forecast-section[
+                width: 600px;
+                border: 3px solid white;
+                border-radui: 15px;
+                bakground-image: radialGradient(circle, white, #add8e6);
+                color: #003366;
+            ]
+        </style>
+    </head>
+    <body>
+        <h1>My weather app homepage</h1>
+        <p class="subtitle">
+        Check today's weather and plan your day better.</p>
+        <div class="weather-card">
+            <h2>Today's Wahter</h2>
+            <div class="weahter-icon"> Cloud</div>
+            <p id="temperature">28*c</p>
+            <p class="details"> City: Benguluru</p>
+            <p class="details"> Condition: Partly cloudy</p>
+            <p class="details">Humidity: 62%</p>
+            <p class="details">Wind speed:12km/h</p>
+        </div>
+        <h2>Weekly forecast</h2>
+    <div class="forecast-section">
+        <h3 class="forecast-title">Next 5 days</h3>
+        <p class="day">Monday:Sunny-30*c</p>
+        <p class="day">Tuesday:Cloudy-27*c</p>
+        <p class="day">Wednesday:Rainy-24*c</p>
+        <p class="day">Thursday:Windy-26*c</p>
+        <p class="day">Friday:Stormy-23*c</p>
+    </div>
+    </body>
+</html>
